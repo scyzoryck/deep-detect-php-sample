@@ -1,0 +1,15 @@
+php:
+    container_name: deep-detect-php
+    build: .
+    volumes:
+        - ./:/var/www/html
+    links:
+        - deep-detect
+
+deep-detect:
+    container_name: deep-detect
+    image: beniz/deepdetect_cpu
+    ports:
+        - 8080:8080
+    volumes:
+        - ./models:/var/deep-detect/models

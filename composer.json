@@ -1,0 +1,19 @@
+{
+  "name": "scyzoryck/deep-detect-sample",
+  "description": "Sample project with deep detect",
+  "authors": [
+    {
+      "name": "Marcin Czarnecki",
+      "email": "marcin.czarnecki@klubfocus.pl"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Scyzoryck\\DeepDetectSample\\": "src"
+    }
+  },
+  "require": {
+    "guzzlehttp/guzzle": "^6.2",
+    "symfony/console": "^3.3"
+  }
+}
